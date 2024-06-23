@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    
+    
+    </body>
+    <style>
+
+ #p1{background-color: aliceblue;
+ color: black;
+margin-left: 610px;
+height: 30px;
+width: 20%;
+text-align: center;
+margin-top: 70px;
+border-radius: 10px;
+font-family: cursive;
+font-size: large;
+margin-left: 530px;
+box-shadow: 5px 5px 5px black;
+}
+
+
+#p1:hover{
+   background-color: black;
+   color: wheat;
+    
+
+}
+        
+      #n1{
+    height: 300px;
+    width: 31%;
+    border: 5px double wheat;
+    margin-top: 30px;
+    margin-left: 460px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+box-shadow: 5px 5px 10px wheat;}
+
+
+#j1{
+    background-color:burlywood;
+    color: black;
+    margin-left: 650px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px black solid;
+    height: 30px;
+    cursor: pointer;
+     
+}
+
+
+#j1:hover{
+   background-color:  crimson;
+   color: aliceblue;
+   
+}
+
+
+body{
+    background-image: url("BG1.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+
+
+#n2{
+height: 30px;
+width: 30%;
+border: 2px solid black;
+margin-left: 470px;
+font-size: 20px;
+font-family: cursive;
+font-weight: 200;
+font-variant: small-caps;
+margin-top: 20px;
+color: black;
+background-color: pink;
+text-align: center;
+
+}
+#m1{
+    background-color: crimson;
+    text-align:center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: 300;
+    
+    color: black;
+  
+
+}
+.BooksContainer{
+    position: absolute;
+top: 60PX;
+
+
+
+}
+#books{
+    cursor: pointer;
+}
+
+
+ 
+    </style>
+
+    <script>
+        function m1(){
+ 
+ n=document.getElementById("p1").value
+ 
+ switch(n)
+ {
+    case'2 STATES':document.getElementById("n1").style.backgroundImage='url("2 STATES.jpg")'
+    document.getElementById("n2").innerHTML="AUTHOR NAME: CHETAN BHAGAT"
+    break;
+case'400 DAYS':document.getElementById("n1").style.backgroundImage='url("400 days.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: CHETAN BHAGAT" 
+break;
+case'EVOLUTION 2020':document.getElementById("n1").style.backgroundImage='url("Evolution 2020.png")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: CHETAN BHAGAT"
+break;
+case'HP-CHAMBER OF SECRETS':document.getElementById("n1").style.backgroundImage='url("Chamber of secrets.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'HP-AND THE DEATHY HALLOWS':document.getElementById("n1").style.backgroundImage='url("And the deathy hallows.jpeg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'HP-AND THE PHILOSPHERS STONE':document.getElementById("n1").style.backgroundImage='url("And the philosphers stone.jpg ")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'HP-AND THE PRISONER OF AZKABAN':document.getElementById("n1").style.backgroundImage='url("HPPA.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'HP-ORDER OF THE PHOENIX':document.getElementById("n1").style.backgroundImage='url("HPPO.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'THE RAMAYANA':document.getElementById("n1").style.backgroundImage='url("ramayana.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: MAHARISHI VALMIKI"
+break;
+case'THE BHAGAVAD GITA':document.getElementById("n1").style.backgroundImage='url("Bhagvatagita.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: VEDA VYASA"
+break;
+case'THE GURU GRANTH SAHIB':document.getElementById("n1").style.backgroundImage='url("Gurugranth.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: PASHAURA SINGH"
+break;
+case'KURAN':document.getElementById("n1").style.backgroundImage='url("HPPO.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case'THE HOLY BIBLE':document.getElementById("n1").style.backgroundImage='url("Bible.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: J.K ROWLING"
+break;
+case 'TO KILL A MOCKINGBIRD':document.getElementById("n1").style.backgroundImage='url("TKMB.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: HARPER LEE"
+break;
+case'MR. DICKENS AND HIS CAROL':document.getElementById("n1").style.backgroundImage='url("MD.jpg")'
+document.getElementById("n2").innerHTML="AUTHOR NAME: SAMANTHA SILVA"
+break;
+
+
+
+
+
+default:document.getElementById("n1").style.backgroundImage='url("fail.jfif")'
+document.getElementById("n2").innerHTML="TILL NOW NOT AVAILABLE...☹"
+ }}
+
+    </script>
+</head>
+<body>
+    
+
+    
+    <input type="text" id="p1" placeholder="TYPE YOUR REQUIRED BOOK"><br>
+    <button onclick="m1()" id="j1">SEARCH</button>
+    
+
+    
+    <div id="n1"></div>
+   
+    <div  id="n2" ></div>
+    <div class="BooksContainer">
+    <select id="Books">
+        <option id="m1">AVAILABLE BOOKS</option>
+        <option value="">400 DAYS</option>
+        <option value="">EVOLUTION 2020</option>
+        <option value="">MR. DICKENS AND HIS CAROL</option>
+        <option value="">TO KILL A MOCKING BIRD</option>
+        <option value="">HP-CHAMBER OF SECFETS</option>
+        <option value="">HP-AND THE DEATHY HALLOWS </option>
+        <option value="">HP-AND THE PHILOSPHERS STONE</option>
+        <option value="">HP-AND THE PRISONER OF AZKABAN</option>
+        <option value="">HP-ORDER OF PHOENIX</option>
+        <option value="">THE RAMAYANA</option>
+        <option value="">THE BHAGAVAD GITA</option>
+        <option value="">THE GURU GRANTH SAHIB</option>
+        <option value="">THY HOLY BIBLE</option>
+        <option value="">KURAN</option>
+        <option value="">2 STATES</option>
+ </select>
+    </div>
+</body>
+
+</html>

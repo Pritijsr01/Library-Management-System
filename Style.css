@@ -1,0 +1,101 @@
+ body{
+   background-image: url("library-neon-text-books-shelf_1262-15612.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+
+ } 
+
+ #navbar{
+   display: flex;
+   align-items: center;
+   position: sticky;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   top: 0px;
+
+ }
+ navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 90%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.9;
+   top: 0px;
+   left: 0px;
+ }
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ :root{
+   --navbar-height:59px;
+ }
+ #logo img {
+   margin: 4px 30px;
+   height: 70px;
+   border: solid rgb(39, 26, 2) 1px;
+   border-radius: 70px;
+   width: 70px;
+  
+ }
+ #logo{
+   margin: 10px 34px;
+
+ }
+#navbar ul{
+   display: flex;
+   margin-left: 550px;
+
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 20px;
+}
+#navbar ul li a{
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   color: #00ccff;
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: rgb(255, 255, 255);
+
+}
+
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   justify-content: center;
+   align-items: center;
+   height: 550px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+   
+
+}
+h1{
+  margin-top: 200px;
+  font-size: 50px;
+  color:white;
+  margin-right: 200px;
+}
+p{
+  color: #16BDF5;
+  font-size: 20px;
+  margin-right: 200px;
+}
+
+#aboutclient{
+position: relative;
+height: 100%;
+width: 100%;
+
+}
+
+    
+ 
